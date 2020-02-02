@@ -22,5 +22,6 @@ def convert():
         return Response(json.dumps('You need to pass keys: "currency1", "currency2", "amount"'),
                         status=settings.STATUS_400_BAD_REQUEST)
 
-if __name__ == "__main__":
+
+if __name__ == "__main__":  # pragma: no cover
     server.run(host=settings.HOST, port=settings.PORT)
