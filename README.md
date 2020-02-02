@@ -36,8 +36,8 @@ This quickstart will show you how to install dependencies and run application lo
 #### With dockerized nginx:
 in nginx/ direcory
    
-    docker build -t cssnginx .
-    docker run --network=host -d -ti cssnginx
+    docker build -t ccsnginx .
+    docker run --network=host -d -ti ccsnginx
 * this version run with nginx at 80 port 
 
 #### Docker-compose version:
