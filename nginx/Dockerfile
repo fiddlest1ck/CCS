@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY erch.conf /etc/nginx/conf.d/ 
+COPY ccs.conf /etc/nginx/conf.d/ 
 
 EXPOSE 80
 

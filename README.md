@@ -6,7 +6,7 @@ CCS it's a simple, lightweight currency conventer service developed in python. Y
 This quickstart will show you how to install dependencies and run application locally.
 
 ## System Dependencies:
-    python3+ and pip3,  build-essential, gcc
+    python3.x and pip3.x, python3-devel, python3-setuptools, build-essential, gcc
     port 5000:5000
     port 80:80
     
@@ -54,23 +54,26 @@ in nginx/ direcory
 # How to use ?
 Basically you should create json with attributes:
 
-**currency1** - It's "from" currency code
-**currency2** - It's "to" currency code
-**amount** - It's value that would be convert
+* **currency1** - It's "from" currency code
+* **currency2** - It's "to" currency code
+* **amount** - It's value that would be convert
 
 #### Example: 
 
     {"amount":100, "currency1": "USD", "currency2": "PLN"}
 
-You will POST this as a data to "/convert" endpoint and recive converted value in response at attribute "value2".
+You will POST this as a data to "/convert" endpoint and recive converted value at response in attribute "value2".
     
     {"currency1": "USD", "currency2": "PLN", "amount": 100, "value2": 389.99}
 
 
 ## Run Unit tests
-In main project directory, with activated virtualenv, you sould execute:
+In main project directory, with activated virtualenv, you should execute:
 
     py.test -s --cov . --cov-report=term-missing --cov-fail-under=100 --no-cov-on-fail 
+
+## TODO
+* Add logging to file, volumes
 
 # Enjoy
 
