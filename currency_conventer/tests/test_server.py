@@ -43,4 +43,3 @@ def test_base_currency_api(mock, client):
                            headers={'Content-Type': 'application/json'})
     assert response.data == b'{"currency1": "PLN", "currency2": "PLN", "amount": 100, "value2": 100}'
     assert response.status_code == STATUS_200_OK
-
